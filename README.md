@@ -28,7 +28,7 @@ jest-it-up exposes a standalone CLI tool (see [options](#options)), but you most
 
 Within `package.json`:
 
-```json
+```js
 {
   "scripts": {
     "test": "jest --coverage", // or set `collectCoverage` to `true` in Jest config
