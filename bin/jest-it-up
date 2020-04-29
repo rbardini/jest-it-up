@@ -1,0 +1,13 @@
+#!/usr/bin/env node
+const program = require('commander')
+const { version } = require('../package.json')
+
+const jestItUp = require('../lib')
+
+program
+  .option('-m, --margin <margin>', 'minimum threshold increase', parseFloat, 0)
+  .option('-d, --dry-run', 'report but do not update thresholds')
+  .version(version, '-v, --version')
+  .parse(process.argv)
+
+jestItUp(program)

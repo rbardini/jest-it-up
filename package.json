@@ -1,0 +1,47 @@
+{
+  "name": "jest-it-up",
+  "version": "0.0.0-development",
+  "description": "Automatically bump up global Jest thresholds whenever coverage goes above them",
+  "keywords": [
+    "jest",
+    "test",
+    "testing",
+    "global",
+    "coverage",
+    "threshold"
+  ],
+  "homepage": "https://github.com/rbardini/jest-it-up",
+  "bugs": {
+    "url": "https://github.com/rbardini/jest-it-up/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rbardini/jest-it-up.git"
+  },
+  "license": "MIT",
+  "author": "Rafael Bardini <rafael@rbardini.com> (https://rbardini.com)",
+  "main": "lib/index.js",
+  "bin": "./bin/jest-it-up",
+  "files": [
+    "bin/*",
+    "lib/*.js"
+  ],
+  "scripts": {
+    "lint": "eslint --ignore-path .gitignore . bin/*",
+    "test": "jest",
+    "posttest": "./bin/jest-it-up"
+  },
+  "dependencies": {
+    "ansi-colors": "^4.1.1",
+    "commander": "^5.0.0"
+  },
+  "devDependencies": {
+    "eslint": "6.8.0",
+    "eslint-config-prettier": "6.11.0",
+    "eslint-plugin-prettier": "3.1.3",
+    "husky": "4.2.5",
+    "jest": "25.5.1",
+    "lint-staged": "10.2.0",
+    "prettier": "2.0.5"
+  }
+}
