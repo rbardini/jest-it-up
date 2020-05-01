@@ -65,7 +65,8 @@ Usage: jest-it-up [options]
 
 Options:
   -m, --margin <margin>  minimum threshold increase (default: 0)
-  -d, --dry-run          report but do not update thresholds
+  -s, --silent           do not output messages
+  -d, --dry-run          process but do not write files
   -v, --version          output the version number
   -h, --help             display help for command
 ```
