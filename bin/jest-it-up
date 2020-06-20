@@ -6,8 +6,9 @@ const jestItUp = require('../lib')
 
 program
   .option('-m, --margin <margin>', 'minimum threshold increase', parseFloat, 0)
+  .option('-i, --interactive', 'ask for confirmation before applying changes')
   .option('-s, --silent', 'do not output messages')
-  .option('-d, --dry-run', 'process but do not write files')
+  .option('-d, --dry-run', 'process but do not change files')
   .version(version, '-v, --version')
   .parse(process.argv)
 

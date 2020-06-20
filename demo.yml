@@ -1,0 +1,161 @@
+config:
+  command: bash
+  cwd: /tmp/example
+  env:
+    recording: true
+  cols: 80
+  rows: 24
+  repeat: 0
+  quality: 100
+  frameDelay: auto
+  maxIdleTime: 2000
+  frameBox:
+    type: solid
+    title: null
+    style: []
+  watermark:
+    imagePath: null
+    style:
+      position: absolute
+      right: 15px
+      bottom: 15px
+      width: 100px
+      opacity: 0.9
+  cursorStyle: block
+  fontFamily: "Menlo, Monaco, Lucida Console, Ubuntu Mono, Monospace"
+  fontSize: 12
+  lineHeight: 1
+  letterSpacing: 0
+  theme:
+    background: "#1d1d1d"
+    foreground: "#afafaf"
+    cursor: "#c7c7c7"
+    black: "#232628"
+    red: "#fc4384"
+    green: "#b3e33b"
+    yellow: "#ffa727"
+    blue: "#75dff2"
+    magenta: "#ae89fe"
+    cyan: "#708387"
+    white: "#d5d5d0"
+    brightBlack: "#626566"
+    brightRed: "#ff7fac"
+    brightGreen: "#c8ed71"
+    brightYellow: "#ebdf86"
+    brightBlue: "#75dff2"
+    brightMagenta: "#ae89fe"
+    brightCyan: "#b1c6ca"
+    brightWhite: "#f9f9f4"
+records:
+  - delay: 0
+    content: "$ "
+  - delay: 100
+    content: 'n'
+  - delay: 100
+    content: p
+  - delay: 100
+    content: m
+  - delay: 100
+    content: ' '
+  - delay: 100
+    content: t
+  - delay: 100
+    content: e
+  - delay: 100
+    content: s
+  - delay: 100
+    content: t
+  - delay: 500
+    content: "\r\n"
+  - delay: 344
+    content: "\r\n> example@0.0.0-development test /tmp/example\r\n> jest --coverage\r\n\r\n"
+  - delay: 1482
+    content: "\e[1m\e[2mDetermining test suites to run...\e[22m\e[22m"
+  - delay: 124
+    content: "\e[999D\e[K\r\n\r\e[K\r\e[1A\e[999D\e[K\r\n\r\e[K\r\e[1A"
+  - delay: 7
+    content: "\r\n\e[0m\e[7m\e[33m\e[1m RUNS \e[22m\e[39m\e[27m\e[0m \e[2mlib/\e[22m\e[1ma.test.js\e[22m\r\n"
+  - delay: 767
+    content: "\r\e[K\r\e[1A\r\e[K\r\e[1A\e[0m\e[7m\e[1m\e[32m PASS \e[39m\e[22m\e[27m\e[0m \e]8;;file:///tmp/example/lib/a.test.js\a\e[2mlib/\e[22m\e[1ma.test.js\e[22m\e]8;;\a\r\n\r\n\e[0m\e[7m\e[33m\e[1m RUNS \e[22m\e[39m\e[27m\e[0m \e[2mlib/\e[22m\e[1ma.test.js\e[22m\r\n\r\e[K\r\e[1A\r\e[K\r\e[1A\r\n\e[0m\e[7m\e[33m\e[1m RUNS \e[22m\e[39m\e[27m\e[0m \e[2mlib/\e[22m\e[1ma.test.js\e[22m\r\n\r\e[K\r\e[1A\r\e[K\r\e[1A\r\n\e[0m\e[7m\e[33m\e[1m RUNS \e[22m\e[39m\e[27m\e[0m \e[2mlib/\e[22m\e[1mb.test.js\e[22m\r\n"
+  - delay: 189
+    content: "\r\e[K\r\e[1A\r\e[K\r\e[1A\r\n\e[0m\e[7m\e[33m\e[1m RUNS \e[22m\e[39m\e[27m\e[0m \e[2mlib/\e[22m\e[1mb.test.js\e[22m\r\n"
+  - delay: 7
+    content: "\r\e[K\r\e[1A\r\e[K\r\e[1A\e[0m\e[7m\e[1m\e[32m PASS \e[39m\e[22m\e[27m\e[0m \e]8;;file:///tmp/example/lib/b.test.js\a\e[2mlib/\e[22m\e[1mb.test.js\e[22m\e]8;;\a\r\n\r\n\e[0m\e[7m\e[33m\e[1m RUNS \e[22m\e[39m\e[27m\e[0m \e[2mlib/\e[22m\e[1mb.test.js\e[22m\r\n\r\e[K\r\e[1A\r\e[K\r\e[1A\r\n\e[0m\e[7m\e[33m\e[1m RUNS \e[22m\e[39m\e[27m\e[0m \e[2mlib/\e[22m\e[1mc.test.js\e[22m\r\n"
+  - delay: 202
+    content: "\r\e[K\r\e[1A\r\e[K\r\e[1A\r\n\e[0m\e[7m\e[33m\e[1m RUNS \e[22m\e[39m\e[27m\e[0m \e[2mlib/\e[22m\e[1mc.test.js\e[22m\r\n\r\e[K\r\e[1A\r\e[K\r\e[1A\e[0m\e[7m\e[1m\e[32m PASS \e[39m\e[22m\e[27m\e[0m \e]8;;file:///tmp/example/lib/c.test.js\a\e[2mlib/\e[22m\e[1mc.test.js\e[22m\e]8;;\a\r\n\r\n\e[0m\e[7m\e[33m\e[1m RUNS \e[22m\e[39m\e[27m\e[0m \e[2mlib/\e[22m\e[1mc.test.js\e[22m\r\n\r\e[K\r\e[1A\r\e[K\r\e[1A\r\n\e[0m\e[7m\e[33m\e[1m RUNS \e[22m\e[39m\e[27m\e[0m \e[2mlib/\e[22m\e[1md.test.js\e[22m\r\n"
+  - delay: 189
+    content: "\r\e[K\r\e[1A\r\e[K\r\e[1A\r\n\e[0m\e[7m\e[33m\e[1m RUNS \e[22m\e[39m\e[27m\e[0m \e[2mlib/\e[22m\e[1md.test.js\e[22m\r\n\r\e[K\r\e[1A\r\e[K\r\e[1A\e[0m\e[7m\e[1m\e[32m PASS \e[39m\e[22m\e[27m\e[0m \e]8;;file:///tmp/example/lib/d.test.js\a\e[2mlib/\e[22m\e[1md.test.js\e[22m\e]8;;\a\r\n\r\n\e[0m\e[7m\e[33m\e[1m RUNS \e[22m\e[39m\e[27m\e[0m \e[2mlib/\e[22m\e[1md.test.js\e[22m\r\n\r\e[K\r\e[1A\r\e[K\r\e[1A\r\n\e[0m\e[7m\e[33m\e[1m RUNS \e[22m\e[39m\e[27m\e[0m \e[2mlib/\e[22m\e[1me.test.js\e[22m\r\n"
+  - delay: 183
+    content: "\r\e[K\r\e[1A\r\e[K\r\e[1A\r\n\e[0m\e[7m\e[33m\e[1m RUNS \e[22m\e[39m\e[27m\e[0m \e[2mlib/\e[22m\e[1me.test.js\e[22m\r\n\r\e[K\r\e[1A\r\e[K\r\e[1A\e[0m\e[7m\e[1m\e[32m PASS \e[39m\e[22m\e[27m\e[0m \e]8;;file:///tmp/example/lib/e.test.js\a\e[2mlib/\e[22m\e[1me.test.js\e[22m\e]8;;\a\r\n\r\n\e[0m\e[7m\e[33m\e[1m RUNS \e[22m\e[39m\e[27m\e[0m \e[2mlib/\e[22m\e[1me.test.js\e[22m\r\n\r\e[K\r\e[1A\r\e[K\r\e[1A\r\n\e[0m\e[7m\e[33m\e[1m RUNS \e[22m\e[39m\e[27m\e[0m \e[2mlib/\e[22m\e[1mf.test.js\e[22m\r\n"
+  - delay: 153
+    content: "\r\e[K\r\e[1A\r\e[K\r\e[1A\r\n\e[0m\e[7m\e[33m\e[1m RUNS \e[22m\e[39m\e[27m\e[0m \e[2mlib/\e[22m\e[1mf.test.js\e[22m\r\n\r\e[K\r\e[1A\r\e[K\r\e[1A\e[0m\e[7m\e[1m\e[32m PASS \e[39m\e[22m\e[27m\e[0m \e]8;;file:///tmp/example/lib/f.test.js\a\e[2mlib/\e[22m\e[1mf.test.js\e[22m\e]8;;\a\r\n\r\n\e[0m\e[7m\e[33m\e[1m RUNS \e[22m\e[39m\e[27m\e[0m \e[2mlib/\e[22m\e[1mf.test.js\e[22m\r\n\r\e[K\r\e[1A\r\e[K\r\e[1A\e[999D\e[K\e[1m\e[2mRunning coverage on untested files...\e[22m\e[22m"
+  - delay: 54
+    content: "\e[999D\e[K"
+  - delay: 145
+    content: "\r\n\e[1mTest Suites: \e[22m\e[1m\e[32m6 passed\e[39m\e[22m, 6 total\r\n\e[1mTests:       \e[22m\e[1m\e[32m17 passed\e[39m\e[22m, 17 total\r\n\e[1mSnapshots:   \e[22m\e[1m\e[32m5 passed\e[39m\e[22m, 5 total\r\n\e[1mTime:\e[22m        1.908s\r\n\e[2mRan all test suites\e[22m\e[2m.\e[22m\r\n"
+  - delay: 27
+    content: "\r\n> example@0.0.0-development posttest /tmp/example\r\n> ./bin/jest-it-up\r\n\r\n"
+  - delay: 82
+    content: "Your changes have improved code coverage. Nice work! ❤️\r\nThe following coverage thresholds will be updated:\r\n\r\n branches    \e[2m85\e[22m → 100 \e[32m   +15\e[39m\r\n functions   \e[2m70\e[22m → 100 \e[32m   +30\e[39m\r\n lines       \e[2m90\e[22m → 100 \e[32m   +10\e[39m\r\n statements  \e[2m75\e[22m → 100 \e[32m   +25\e[39m\r\n\r\nDone! Please record the changes to \e[33mjest.config.js\e[39m.\r\n"
+  - delay: 10
+    content: '$ '
+  - delay: 2000
+    content: g
+  - delay: 100
+    content: i
+  - delay: 100
+    content: t
+  - delay: 100
+    content: ' '
+  - delay: 100
+    content: d
+  - delay: 100
+    content: i
+  - delay: 100
+    content: f
+  - delay: 100
+    content: f
+  - delay: 100
+    content: ' '
+  - delay: 100
+    content: j
+  - delay: 100
+    content: e
+  - delay: 100
+    content: s
+  - delay: 100
+    content: t
+  - delay: 100
+    content: .
+  - delay: 100
+    content: c
+  - delay: 100
+    content: o
+  - delay: 100
+    content: 'n'
+  - delay: 100
+    content: f
+  - delay: 100
+    content: i
+  - delay: 100
+    content: g
+  - delay: 100
+    content: .
+  - delay: 100
+    content: j
+  - delay: 100
+    content: s
+  - delay: 500
+    content: "\r\n"
+  - delay: 24
+    content: "\e[?1h\e=\r"
+  - delay: 132
+    content: "\e[1m\e[0m\e[1m────────────────────────────────────────────────────────────────────────────────\e[0m\e[m\r\n\e[1mmodified: jest.config.js\e[m\r\n\e[1m────────────────────────────────────────────────────────────────────────────────\e[0m\e[m\r\n"
+  - delay: 33
+    content: "\e[36m\e[1m\e[38;5;13m@ jest.config.js:8 @\e[1m\e[1m\e[38;5;146m module.exports = {\e[0m\e[m\r\n  coverageReporters: ['json-summary', 'lcovonly'],\e[m\e[m\r\n  coverageThreshold: {\e[m\e[m\r\n    global: {\e[m\e[m\r\n"
+  - delay: 20
+    content: "\e[1m\e[38;5;1m\e[1;31m      branches: \e[m\e[1;31;48;5;52m85\e[m\e[1;31m,\e[m\e[m\r\n\e[0m\e[1m\e[38;5;1m\e[1;31m      functions: \e[m\e[1;31;48;5;52m7\e[m\e[1;31m0,\e[m\e[m\r\n\e[0m\e[1m\e[38;5;1m\e[1;31m      lines: \e[m\e[1;31;48;5;52m9\e[m\e[1;31m0,\e[m\e[m\r\n\e[0m\e[1m\e[38;5;1m\e[1;31m      statements: \e[m\e[1;31;48;5;52m75\e[m\e[1;31m,\e[m\e[m\r\n"
+  - delay: 19
+    content: "\e[0m\e[1m\e[38;5;2m\e[1;32m      branches: \e[m\e[1;32;48;5;22m100\e[m\e[1;32m,\e[m\e[m\r\n\e[0m\e[1m\e[38;5;2m\e[1;32m      functions: \e[m\e[1;32;48;5;22m10\e[m\e[1;32m0,\e[m\e[m\r\n\e[0m\e[1m\e[38;5;2m\e[1;32m      lines: \e[m\e[1;32;48;5;22m10\e[m\e[1;32m0,\e[m\e[m\r\n\e[0m\e[1m\e[38;5;2m\e[1;32m      statements: \e[m\e[1;32;48;5;22m100\e[m\e[1;32m,\e[m\e[m\r\n\e[0m    },\e[m\e[m\r\n  },\e[m\e[m\r\n  testEnvironment: 'node',\e[m\e[m\r\n\r\e[K\e[?1l\e>$ "
+  - delay: 2000
+    content: "\r\n"

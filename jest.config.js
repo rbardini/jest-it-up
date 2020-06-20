@@ -2,7 +2,12 @@ module.exports = {
   clearMocks: true,
   collectCoverage: true,
   collectCoverageFrom: ['lib/*.js'],
-  coverageReporters: ['json-summary', 'lcovonly'],
+  coverageReporters: [
+    'json-summary',
+    'lcovonly',
+    ['text', { skipFull: true }],
+    'text-summary',
+  ],
   coverageThreshold: {
     global: {
       branches: 100,

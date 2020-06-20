@@ -32,6 +32,7 @@
     "posttest": "./bin/jest-it-up"
   },
   "dependencies": {
+    "@inquirer/confirm": "0.0.9-alpha.0",
     "ansi-colors": "^4.1.1",
     "commander": "^5.0.0"
   },
