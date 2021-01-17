@@ -1,8 +1,14 @@
 name: Main
-on: push
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+    branches:
+      - master
 
 jobs:
-  test-and-release:
+  test-release:
     name: Test and release
     runs-on: ubuntu-latest
     steps:
@@ -28,6 +34,7 @@ jobs:
 
       - name: Release
         uses: cycjimmy/semantic-release-action@v2
+        if: github.ref == 'refs/heads/master'
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
