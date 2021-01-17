@@ -12,4 +12,4 @@ program
   .version(version, '-v, --version')
   .parse(process.argv)
 
-jestItUp(program)
+jestItUp(program.opts())
