@@ -12,7 +12,7 @@ Ensure incremental coverage gains are not lost, and positively reinforce good te
 
 ## Requirements
 
-- Node.js 8.10.0+
+- Node.js 12+
 - Conventional `jest.config.js` (`package.json` config unsupported)
 - `json-summary` coverage report (see [usage](#usage))
 
