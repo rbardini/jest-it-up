@@ -67,6 +67,7 @@ Options:
   -i, --interactive      ask for confirmation before applying changes
   -s, --silent           do not output messages
   -d, --dry-run          process but do not change files
+  -c, --config <path>    the path to a Jest config file
   -v, --version          output the version number
   -h, --help             display help for command
 ```

@@ -9,6 +9,7 @@ program
   .option('-i, --interactive', 'ask for confirmation before applying changes')
   .option('-s, --silent', 'do not output messages')
   .option('-d, --dry-run', 'process but do not change files')
+  .option('-c, --config <path>', 'the path to a Jest config file')
   .version(version, '-v, --version')
   .parse(process.argv)
 
