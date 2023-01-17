@@ -5,11 +5,11 @@ const { version } = require('../package.json')
 const jestItUp = require('../lib')
 
 program
+  .option('-c, --config <path>', 'path to a Jest config file', 'jest.config.js')
   .option('-m, --margin <margin>', 'minimum threshold increase', parseFloat, 0)
   .option('-i, --interactive', 'ask for confirmation before applying changes')
   .option('-s, --silent', 'do not output messages')
   .option('-d, --dry-run', 'process but do not change files')
-  .option('-c, --config <path>', 'the path to a Jest config file')
   .version(version, '-v, --version')
   .parse(process.argv)
 
