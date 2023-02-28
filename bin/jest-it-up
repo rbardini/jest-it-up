@@ -7,6 +7,12 @@ const jestItUp = require('../lib')
 program
   .option('-c, --config <path>', 'path to a Jest config file', 'jest.config.js')
   .option('-m, --margin <margin>', 'minimum threshold increase', parseFloat, 0)
+  .option(
+    '-t, --tolerance <tolerance>',
+    'threshold difference from actual coverage',
+    parseFloat,
+    0,
+  )
   .option('-i, --interactive', 'ask for confirmation before applying changes')
   .option('-s, --silent', 'do not output messages')
   .option('-d, --dry-run', 'process but do not change files')
