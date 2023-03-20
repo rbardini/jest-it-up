@@ -65,6 +65,7 @@ Usage: jest-it-up [options]
 Options:
   -c, --config <path>    path to a Jest config file (default: 'jest.config.js')
   -m, --margin <margin>  minimum threshold increase (default: 0)
+  -t, --tolerance        threshold difference from actual coverage
   -i, --interactive      ask for confirmation before applying changes
   -s, --silent           do not output messages
   -d, --dry-run          process but do not change files
