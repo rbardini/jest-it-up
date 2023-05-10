@@ -49,6 +49,12 @@ module.exports = {
       functions: 0,
       lines: 0,
       statements: 0
+    },
+    './src/**/*.module.ts': { // coverage key with pattern
+      branches: 50, // or your current numbers for the patterned threshold key
+      functions: 50,
+      lines: 50,
+      statements: 50
     }
   }
 }
@@ -66,9 +72,17 @@ Options:
   -c, --config <path>          path to a Jest config file (default: 'jest.config.js')
   -m, --margin <margin>        minimum threshold increase (default: 0)
   -t, --tolerance <tolerance>  threshold difference from actual coverage
+  -k, --thresholdKeys <keys>   comma-separated list of threshold keys to consider (default: 'global')
   -i, --interactive            ask for confirmation before applying changes
   -s, --silent                 do not output messages
   -d, --dry-run                process but do not change files
   -v, --version                output the version number
   -h, --help                   display help for command
 ```
+
+jest-it-up only considers the `global` threshold key by default. To update custom threshold keys, you can use the `--thresholdKeys` option when running the script. For example, to update the `global` and `./src/**/*.module.ts` threshold keys, you can run:
+
+```console
+$ jest-it-up --thresholdKeys global,"./src/**/*.module.ts"
+```
+This will update the specified threshold keys (global and custom) and leave others unchanged.
