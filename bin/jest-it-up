@@ -13,6 +13,11 @@ program
     parseFloat,
     0,
   )
+  .option(
+    '-k, --threshold-keys <keys>',
+    `comma-separated list of threshold keys to consider (default: 'global')`,
+    'global',
+  )
   .option('-i, --interactive', 'ask for confirmation before applying changes')
   .option('-s, --silent', 'do not output messages')
   .option('-d, --dry-run', 'process but do not change files')
