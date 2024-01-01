@@ -17,8 +17,10 @@ program
   .option('-s, --silent', 'do not output messages')
   .option('-d, --dry-run', 'process but do not change files')
   .option(
-    '-w, --whole-number',
-    'round coverage thresholds down to whole a whole number',
+    '-p, --precision <digits>',
+    'number of threshold decimal places to persist',
+    parseInt,
+    2,
   )
   .version(version, '-v, --version')
   .parse(process.argv)
