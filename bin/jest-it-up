@@ -16,6 +16,12 @@ program
   .option('-i, --interactive', 'ask for confirmation before applying changes')
   .option('-s, --silent', 'do not output messages')
   .option('-d, --dry-run', 'process but do not change files')
+  .option(
+    '-p, --precision <digits>',
+    'number of threshold decimal places to persist',
+    parseInt,
+    2,
+  )
   .version(version, '-v, --version')
   .parse(process.argv)
 

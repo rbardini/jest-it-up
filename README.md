@@ -23,7 +23,7 @@ npm install --save-dev jest-it-up
 
 ## Usage
 
-jest-it-up exposes a standalone CLI tool (see [options](#options)), but you most likelly want to use it in a post-test script.
+jest-it-up exposes a standalone CLI tool (see [options](#options)), but you most likely want to use it in a post-test script.
 
 Within `package.json`:
 
@@ -70,5 +70,6 @@ Options:
   -s, --silent                 do not output messages
   -d, --dry-run                process but do not change files
   -v, --version                output the version number
+  -p, --precision              number of threshold decimal places to persist
   -h, --help                   display help for command
 ```
