@@ -33,9 +33,9 @@
     "prepare": "husky install"
   },
   "dependencies": {
-    "@inquirer/confirm": "^2.0.0",
     "ansi-colors": "^4.0.0",
-    "commander": "^11.0.0"
+    "commander": "^11.0.0",
+    "prompts": "^2.4.2"
   },
   "devDependencies": {
     "eslint": "8.56.0",
