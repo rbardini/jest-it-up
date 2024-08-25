@@ -1,7 +1,7 @@
 # jest-it-up
 
 [![npm package version](https://img.shields.io/npm/v/jest-it-up)](https://www.npmjs.com/package/jest-it-up)
-[![Build status](https://img.shields.io/github/workflow/status/rbardini/jest-it-up/Main)](https://github.com/rbardini/jest-it-up/actions)
+[![Build status](https://img.shields.io/github/actions/workflow/status/rbardini/jest-it-up/main.yml)](https://github.com/rbardini/jest-it-up/actions)
 [![Code coverage](https://img.shields.io/codecov/c/github/rbardini/jest-it-up.svg)](https://codecov.io/gh/rbardini/jest-it-up)
 [![Dependencies status](https://img.shields.io/librariesio/release/npm/jest-it-up)](https://libraries.io/npm/jest-it-up)
 
@@ -11,7 +11,7 @@ Ensure incremental coverage gains are not lost, and positively reinforce good te
 
 ## Requirements
 
-- Node.js 16+
+- Node.js 20+
 - Conventional `jest.config.js` (`package.json` config unsupported)
 - `json-summary` coverage report (see [usage](#usage))
 
@@ -41,16 +41,16 @@ within `jest.config.js`:
 ```js
 module.exports = {
   coverageReporters: [
-    'json-summary' // plus any other reporters, e.g. "lcov", "text", "text-summary"
+    'json-summary', // plus any other reporters, e.g. "lcov", "text", "text-summary"
   ],
   coverageThreshold: {
     global: {
       branches: 0, // or your current numbers
       functions: 0,
       lines: 0,
-      statements: 0
-    }
-  }
+      statements: 0,
+    },
+  },
 }
 ```
 
