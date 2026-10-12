@@ -23,6 +23,7 @@ program
     2,
   )
   .version(version, '-v, --version')
+  .allowExcessArguments()
   .parse(process.argv)
 
 jestItUp(program.opts())
