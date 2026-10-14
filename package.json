@@ -22,7 +22,9 @@
   "author": "Rafael Bardini <rafael@rbardini.com> (https://rbardini.com)",
   "type": "commonjs",
   "main": "lib/index.js",
-  "bin": "./bin/jest-it-up",
+  "bin": {
+    "jest-it-up": "bin/jest-it-up"
+  },
   "files": [
     "bin/*",
     "lib/*.js"
