@@ -11,7 +11,7 @@ Ensure incremental coverage gains are not lost, and positively reinforce good te
 
 ## Requirements
 
-- Node.js 20+
+- Node.js 24+
 - Conventional `jest.config.js` (`package.json` config unsupported)
 - `json-summary` coverage report (see [usage](#usage))
 
