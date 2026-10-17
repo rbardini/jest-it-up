@@ -36,7 +36,6 @@
     "posttest": "./bin/jest-it-up"
   },
   "dependencies": {
-    "ansi-colors": "^4.0.0",
     "commander": "^15.0.0",
     "prompts": "^2.4.0"
   },
